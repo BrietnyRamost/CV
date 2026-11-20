@@ -16,7 +16,7 @@
   --azul-claro:#e3f2ff;
   --azul-fondo:#f4faff;
   --navy:#2d62a8;
-  --texto:#4a5f82;
+  --texto:#000000;
   --naranja:#7fd8ff;
   --blanco:#ffffff;
   --sombra:0 10px 30px rgba(40,110,170,.12);
@@ -25,7 +25,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:'Lato',sans-serif;color:var(--texto);background:var(--blanco);line-height:1.6;overflow-x:hidden}
-h1,h2,h3{font-family:'Poppins',sans-serif;color:var(--navy);line-height:1.2}
+h1,h2,h3{font-family:'Poppins',sans-serif;color:#000000;line-height:1.2}
 a{text-decoration:none;color:inherit}
 ul{list-style:none}
 .contenedor{width:min(1100px,92%);margin:0 auto}
@@ -225,7 +225,7 @@ footer{background:var(--navy);color:#ffffff;text-align:center;padding:26px 0;fon
   --c-azul:var(--azul,#3fb0f5);
   --c-azul2:var(--azul-oscuro,#1d8fd8);
   --c-naranja:var(--naranja,#ffb347);
-  --c-navy:var(--navy,#0e1b3d);
+  --c-navy:#0e1b3d;
   background:radial-gradient(120% 90% at 20% 0%,#16306b 0%,var(--c-navy) 55%,#070f26 100%);
   color:#cfe3f7;
   overflow:hidden;
@@ -399,7 +399,7 @@ footer{background:var(--navy);color:#ffffff;text-align:center;padding:26px 0;fon
 }
 .cvd-flot{
   position:absolute;padding:10px 14px;border-radius:14px;font-size:.78rem;font-weight:700;color:#fff;
-  background:rgba(45,98,168,.82);border:1px solid rgba(255,255,255,.28);
+  background:rgba(14,27,61,.82);border:1px solid rgba(255,255,255,.28);
   box-shadow:0 12px 28px rgba(0,0,0,.35);
   backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
   animation:flotar 5s ease-in-out infinite;transform:translateZ(50px);
@@ -474,7 +474,7 @@ header.compacto .nav{height:60px}
 /* Títulos */
 .subrayado{width:0;transition:width 1s ease .35s}
 .visible .subrayado{width:70px}
-.titulo-seccion h2{background:linear-gradient(90deg,var(--navy) 40%,var(--azul-oscuro) 50%,var(--navy) 60%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:brillo-t 7s linear infinite}
+.titulo-seccion h2{background:linear-gradient(90deg,#000000 40%,#333333 50%,#000000 60%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:brillo-t 7s linear infinite}
 @keyframes brillo-t{to{background-position:-250% 0}}
 
 /* Tarjetas: entrada con escala + inclinación 3D con reflejo */
@@ -521,8 +521,6 @@ header.compacto .nav{height:60px}
 }
 
 /* ================= PALETA AZUL CLARA + EFECTOS 2 ================= */
-.cvd{background:radial-gradient(120% 90% at 20% 0%,#5aa9ee 0%,#3f86d4 50%,#2d6cb8 100%);color:#eef6ff}
-.cvd-sello{color:#0f3d73}
 footer{color:#fff}
 /* Burbujas flotantes */
 .burbuja{position:absolute;bottom:-60px;border-radius:50%;pointer-events:none;background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.9),rgba(127,216,255,.25));border:1px solid rgba(255,255,255,.6);animation:subir linear infinite;z-index:0}
